@@ -1,14 +1,12 @@
-// src/components/FilmYear.jsx
+import React from 'react';
 
-import React from 'react'
-
-const FilmYear = () => {
+const FilmYear = ({ film, onYearClick, selectedFilm }) => {
   return (
-    <div>
-      
-    </div>
-  )
-}
+    <p className= {film.date==selectedFilm?.date?"active":"" } onClick={() => onYearClick(film)} style={{ cursor: 'pointer' }}>
+      {film.date}
+    </p>
+  );
+};
 
-export default FilmYear
+export default FilmYear;
 

@@ -1,4 +1,67 @@
-/* src/pages/Main.css */
+.body{
+    background-image: url("../helper/bg\ \(1\).jpg");  
+    background-size: cover;
+    height: 100vh;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    
+}
+.container {
+   display: flex; 
+   justify-content: center;
+   align-items: center;
+   /* height: 80vh; */
+    width: 80%;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #ccc;
+    padding: 0.5rem;
+}
+.card{
+    width: 80%;
+    height: auto;
+    display: flex;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    background-color: #405979a1;
+  
+}
+.selected-film{
+   
+    padding: 2rem;
+    width: 40rem;
+    /* height: 20rem; */
+font-size: large;
+}
+.film-list{
+ font-size: large;
+    padding: 2rem;
+}
+.active{
+    /* padding: 0.2rem; */
+    color: red;
+    background-color: rgba(250, 235, 215, 0.325);
+    width: 3rem;
+    /* text-decoration: underline; */
+    border-bottom: 3px solid;
+    border-radius: 3px;
+}
+
+@media screen and (max-width: 850px) {
+    .card{
+        min-width: 470px;
+        display: block;
+    }
+    .selected-film{
+        width: 90%;
+    }
+   .film-year{
+    display: flex;
+gap: 1rem;
+   }
+    
+}
 
 
   
